@@ -1,7 +1,7 @@
 <template>
   <div class="content-edit">
     <el-input class="file-title" v-model="currentTitle" placeholder="请输入标题" />
-    <mavon-editor v-bind="$attrs" v-on="$listeners" placeholder="开始你的笔记吧~" class="markdown-wrapper" />
+    <mavon-editor v-bind="$attrs" @save="onSave" v-on="$listeners" placeholder="开始你的笔记吧~" class="markdown-wrapper" />
   </div>
 </template>
 
@@ -14,6 +14,11 @@ export default {
   data() {
     return {
       currentTitle: this.title
+    }
+  },
+  methods: {
+    onSave() {
+      console.log('save');
     }
   },
   watch: {
