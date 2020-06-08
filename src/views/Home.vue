@@ -11,7 +11,6 @@
         :boxShadow="false"
         :subfiled="false"
         :shortCut="false"
-        :placeholder="开始你的笔记吧"
         @change="onSubmit"
       ></file-edit>
     </div>
@@ -47,7 +46,7 @@ export default {
         { id: 6, title: "文件名 6", time: "2020-06-21" }
       ],
       fileItem:{
-        title:'electron-vue-note',
+        title:'',
         content:''
       }
     };
@@ -63,6 +62,7 @@ export default {
 
 <style lang="less" scoped>
 .app-warpper {
+  overflow-x: hidden;
   display: flex;
   .siderbar-container {
     width: 300px;
