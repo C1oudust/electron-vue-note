@@ -1,6 +1,6 @@
 <template>
   <div class="search-container">
-    <el-input placeholder="请输入内容" v-bind="$attrs" v-on="$linteners">
+    <el-input placeholder="请输入内容" v-bind="$attrs" v-on="$listeners">
       <el-button slot="append" icon="el-icon-search"></el-button>
     </el-input>
     <el-dropdown trigger="click">
@@ -20,23 +20,24 @@ export default {
   name: "FileSearch",
   methods: {
     createFile() {
-      this.$emit('create')
+      this.$emit("create");
     },
-    importFile(){
-      this.$emit('import')
+    importFile() {
+      this.$emit("import");
     }
-  },
+  }
 };
 </script>
 
 <style lang="less" scoped>
-.search-container{
+.search-container {
   display: flex;
   align-items: center;
-  padding: 12px 10px ;
-  background:#daecfe;
-  .el-dropdown{
-    .el-button{
+  padding: 12px 10px;
+  background: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  .el-dropdown {
+    .el-button {
       margin-left: 10px;
       padding: 6px;
       font-size: 14px;
