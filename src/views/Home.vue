@@ -1,16 +1,24 @@
 <template>
   <div class="app-warpper">
-   <div class="siderbar-container"></div>
+   <div class="siderbar-container">
+     <file-search ></file-search>
+   </div>
    <div class="main-container"></div>
   </div>
 </template>
 
 <script>
+import FileSearch from '@/components/FileSearch';
 export default {
   name: 'Home',
   components: {
-    
-  }
+    FileSearch
+  },
+  data() {
+    return {
+       searchTitle: '',
+    }
+  },
 }
 </script>
 
