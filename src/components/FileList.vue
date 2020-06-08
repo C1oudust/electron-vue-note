@@ -1,19 +1,16 @@
 <template>
-<div class="scrollbar-filelist">
-    <el-scrollbar class="file-list" wrap-class="scrollbar-filelist" :noresize="false" type="ul">
+  <el-scrollbar class="file-list" wrap-class="scrollbar-filelist" :noresize="false" type="ul">
     <li v-for="(item, index) in fileList" :key="index" class="file-item">
       <font-awesome-icon :icon="['fab', 'markdown']" class="item-icon" />
       <p class="item-title">{{ item.title }}</p>
       <p class="item-time">{{ item.time }}</p>
     </li>
   </el-scrollbar>
-</div>
-
 </template>
 
 <script>
 export default {
-  name: 'FileList',
+  name: "FileList",
   props: {
     fileList: {
       type: Array,
@@ -21,9 +18,9 @@ export default {
     }
   },
   data() {
-    return {}
+    return {};
   }
-}
+};
 </script>
 
 <style lang="less" scoped>
