@@ -22,8 +22,36 @@ export default {
   }
 };
 </script>
-
 <style lang="less" scoped>
+.file-list {
+  user-select: none;
+  .file-item {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    border-bottom: 1px solid #eaeefb;
+
+    .item-icon {
+      margin-left: 20px;
+      margin-right: 12px;
+    }
+
+    .item-title {
+      flex: 1;
+      margin-right: 5px;
+      font-size: 14px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .item-time {
+      width: 80px;
+      font-size: 12px;
+    }
+  }
+}
+</style>
+<style lang="less">
 .scrollbar-filelist {
   height: calc(100vh - 56px);
   overflow-x: hidden !important;

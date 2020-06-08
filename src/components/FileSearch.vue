@@ -1,6 +1,6 @@
 <template>
   <div class="search-container">
-    <el-input placeholder="请输入内容" v-bind="$attrs" v-on="$linteners">
+    <el-input placeholder="请输入内容" v-bind="$attrs" v-on="$listeners">
       <el-button slot="append" icon="el-icon-search"></el-button>
     </el-input>
     <el-dropdown trigger="click">
