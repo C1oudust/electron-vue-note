@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import '@/plugin/element-ui'
 import '@/plugin/fontawesome'
-
+import '@/plugin/mavonEditor'
 Vue.config.productionTip = false
 
 new Vue({
