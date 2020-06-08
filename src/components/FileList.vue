@@ -69,7 +69,7 @@ export default {
     right: 0px;
     width: 5px;
     .el-scrollbar__thumb {
-      background-color: rgba(144, 147, 153, 0.5);
+      background-color: rgba(144, 147, 153, 0.8);
     }
   }
 }
